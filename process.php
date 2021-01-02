@@ -150,13 +150,13 @@ switch ($action) {
 			                     $message="<p>Hi ".$name.",<br/>Please click on belo email verification link to verify your email.<br/><br/><a href=http://localhost/phppractice/intership/Registration/process.php?action=verify&token=".$email_verify_Token.">click here to Active your Account </p>";
 			                    // var_dump($app->getEmail()->send($user,"Testing  Email Verification",$message));
 			                    // echo $user;
-			                     die($message);
+			                     // die($message);
 
-			                    // if($app->getEmail()->Sendmail($user,"Testing  Email Verification",$message))
-			                    // {
+			                    if($app->getEmail()->Sendmail($user,"Testing  Email Verification",$message))
+			                    {
+			                    	echo "success";
 
-
-			                    // }
+			                    }
 			                    // else
 			                    // {
 			                    //  echo 0;
